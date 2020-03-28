@@ -1,0 +1,211 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.solar {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: absolute;
+    overflow: hidden;
+}
+
+.sun {
+    height: 50px;
+    width: 50px;
+    background: yellow;
+    border-radius: 50%;
+    border: 2px solid orange;
+    -webkit-box-shadow: 0 0 3px 2px orange inset;
+    box-shadow: 0 0 3px 2px orange inset;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+
+.merqury-orbit {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #104bee;
+    -webkit-box-shadow: 0 0 2px 3px skyblue inset;
+    box-shadow: 0 0 2px 3px skyblue inset;
+}
+
+.merqury {
+    background: blue;
+    left: 0;
+    top: 7px;
+}
+
+.earth-orbit {
+    height: 250px;
+    width: 250px;
+    border: 2px solid seagreen;
+    -webkit-box-shadow: 0 0 2px 3px green inset;
+    box-shadow: 0 0 2px 3px green inset;
+    -webkit-animation-duration: 3s !important;
+    animation-duration: 3s !important;
+}
+
+.earth {
+    background: -webkit-gradient(linear, left top, right top, from(green), color-stop(seagreen), to(yellow));
+    background: linear-gradient(to right, green, seagreen, yellow);
+    left: 0;
+    top: 70px;
+    border: 1px solid darkgreen;
+}
+
+.venus-orbit {
+    height: 180px;
+    width: 180px;
+    border: 2px solid violet;
+    -webkit-box-shadow: 0 0 2px 3px inset purple;
+    box-shadow: 0 0 2px 3px inset purple;
+    -webkit-animation-duration: 4s;
+    animation-duration: 2s !important;
+}
+
+.venus {
+    background: -webkit-gradient(linear, left top, right top, from(blue), color-stop(darkblue), to(#517fff));
+    background: linear-gradient(to right, blue, darkblue, #517fff);
+    border: 1px solid black;
+    left: 0;
+    top: 40px;
+}
+
+.mars-orbit {
+    height: 300px;
+    width: 300px;
+    border: 2px solid yellow;
+    -webkit-box-shadow: 0 0 2px 3px orange inset;
+    box-shadow: 0 0 2px 3px orange inset;
+    -webkit-animation-duration: 4s !important;
+    animation-duration: 4s !important;
+}
+
+.mars {
+    background: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(orange), color-stop(gray), to(orange));
+    background: linear-gradient(to right, yellow, orange, gray, orange);
+    -webkit-box-shadow: 0 0 3px 2px #bf4706;
+    box-shadow: 0 0 3px 2px #bf4706;
+    left: 0;
+    top: 85px;
+}
+
+.jupitar-orbit {
+    height: 380px;
+    width: 380px;
+    border: 2px solid #c2af03;
+    -webkit-box-shadow: 0 0 2px 3px tomato inset;
+    box-shadow: 0 0 2px 3px tomato inset;
+    -webkit-animation-duration: 5s !important;
+    animation-duration: 5s !important;
+}
+
+.jupitar {
+    background: -webkit-gradient(linear, left top, right bottom, from(tomato), color-stop(red), color-stop(orange), color-stop(red), to(tomato));
+    background: linear-gradient(to right bottom, tomato, red, orange, red, tomato);
+    -webkit-box-shadow: 0 0 3px 2px #c8efff;
+    box-shadow: 0 0 3px 2px #c8efff;
+    left: 0;
+    top: 120px;
+}
+
+.saturn-orbit {
+    height: 450px;
+    width: 450px;
+    border: 2px solid darkblue;
+    -webkit-box-shadow: 0 0 2px 3px darkgreen inset, 0 0 5px 4px white inset;
+    box-shadow: 0 0 2px 3px darkgreen inset, 0 0 5px 4px white inset;
+    -webkit-animation-duration: 6s !important;
+    animation-duration: 6s !important;
+}
+
+.saturn {
+    background: -webkit-gradient(linear, left top, left bottom, from(seagreen), color-stop(skyblue), color-stop(darkgreen), color-stop(skyblue), to(blue));
+    background: linear-gradient(to bottom, seagreen, skyblue, darkgreen, skyblue, blue);
+    -webkit-box-shadow: 0 0 4px 3px #eec;
+    box-shadow: 0 0 4px 3px #eec;
+    left: 0;
+    top: 150px;
+}
+
+.uranus-orbit {
+    height: 500px;
+    width: 500px;
+    border: 2px solid #101c1a;
+    -webkit-box-shadow: 0 0 2px 3px white inset;
+    box-shadow: 0 0 2px 3px white inset;
+    -webkit-animation-duration: 7s !important;
+    animation-duration: 7s !important;
+}
+
+.uranus {
+    background: -webkit-gradient(linear, left top, right top, from(tomato), color-stop(white), color-stop(gray), color-stop(black), color-stop(80%, red));
+    background: linear-gradient(to right, tomato, white, gray, black, red 80%);
+    left: 0;
+    top: 170px;
+}
+
+.neptun-orbit {
+    height: 550px;
+    width: 550px;
+    border: 2px solid white;
+    -webkit-box-shadow: 0 0 4px 3px gray inset;
+    box-shadow: 0 0 4px 3px gray inset;
+    -webkit-animation-duration: 8s !important;
+    animation-duration: 8s !important;
+}
+
+.neptun {
+    background: -webkit-gradient(linear, left top, right top, from(blue), color-stop(orange), to(red));
+    background: linear-gradient(to right, blue, orange, red);
+    -webkit-box-shadow: 0 0 5px 3px white;
+    box-shadow: 0 0 5px 3px white;
+    left: 0;
+    top: 190px;
+}
+
+.orbit-config {
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-animation: rot 1s linear infinite;
+    animation: rot 1s linear infinite;
+}
+
+
+
+.planet-config {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes rot {
+    100% {
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rot {
+    100% {
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
